@@ -14,3 +14,4 @@ Note the following modifications:
 * The main file has been converted to a `.ino` Arduino file, with `setup()` and `loop()` functions
 * Since Arduino code is based on C++, the ARM CMSIS includes are wrapped in `extern "C" {}` to prevent linker errors
 * The input and output waveforms are sent to the serial monitor for plotting (e.g. with the Arduino Serial Plotter).
+* Since the CMSIS-DSP library seems broken under PlatformIO, the whole thing is included under `lib/` folder, and can be copied to another project
